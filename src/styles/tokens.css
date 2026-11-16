@@ -1,0 +1,45 @@
+/* Tokens de cor, tipografia e espaçamento do painel. */
+:root {
+  color-scheme: light;
+  --fonte: 'Inter Variable', Inter, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --fonte-titulo: 'Source Serif 4 Variable', 'Source Serif 4', Georgia, serif;
+  --fonte-num: var(--fonte);
+
+  --fundo: #ffffff;
+  --superficie: #ffffff;
+  --fundo-2: #eceef0;
+  --texto: #1c1e21;
+  --texto-2: #5a6069;
+  --texto-3: #5a6069;
+  --nber: #e6e8eb;
+  --linha: #e2e4e7;
+  --grade: #eceef0;
+  --referencia: #5a6069;
+  --controle: #5a6069;
+  --foco: #1c1e21;
+  --aviso: #8a5a00;
+  --ok: #1f6f3d;
+  --falha: #b3261e;
+
+  --dado: #0f5c6e;
+  --comparacao: #6f7985;
+  --pais-foco: var(--dado);
+  --pais-contexto: var(--comparacao);
+
+  --t-1: 26px;
+  --t-2: 20px;
+  --t-3: 17px;
+  --t-4: 14px;
+  --t-5: 12.5px;
+
+  --esp-1: 4px;
+  --esp-2: 8px;
+  --esp-3: 12px;
+  --esp-4: 16px;
+  --esp-6: 24px;
+  --esp-8: 32px;
+  --esp-12: 48px;
+  --esp-16: 64px;
+  --transicao: 120ms linear;
+}
+

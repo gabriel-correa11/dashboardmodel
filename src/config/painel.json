@@ -1,0 +1,115 @@
+{
+  "titulo": "Recessões dos EUA e seus efeitos no Brasil",
+  "subtitulo": "Indicadores dos EUA e do Brasil alinhados ao mês de pico (NBER) de cada recessão: {episodios}.",
+  "aviso_ilustrativo": "Dados ilustrativos, gerados para desenvolver o painel. Não use estes números em análises.",
+  "padroes": {
+    "serie": "br_prod_ind",
+    "antes": 12,
+    "depois": 36
+  },
+  "janelas": {
+    "antes": [
+      6,
+      12,
+      24
+    ],
+    "depois": [
+      12,
+      24,
+      36,
+      48
+    ]
+  },
+  "cores": {
+    "_comentario": "Brasil usa a cor do dado em foco e os demais países usam a cor de comparação, definidos pelos tokens em styles/tokens.css.",
+    "paises_tracejados": [],
+    "pais_foco": "BR"
+  },
+  "abas": [
+    {
+      "id": "episodios",
+      "nome": "Episódios"
+    },
+    {
+      "id": "paises",
+      "nome": "EUA × Brasil"
+    },
+    {
+      "id": "medidas",
+      "nome": "Medidas"
+    },
+    {
+      "id": "metodo",
+      "nome": "Fontes e método"
+    }
+  ],
+  "textos": {
+    "sentido": {
+      "queda": "queda",
+      "alta": "alta",
+      "neutro": "variação"
+    },
+    "manchete_varios": "{indicador} ({pais}): {sentido} mais forte em {ep_extremo}, de {valor_extremo}",
+    "manchete_recuperacao": "; volta ao nível do pico mais rápida em {ep_rec}, em {meses_rec}",
+    "manchete_um": "{indicador} ({pais}) em {ep}: {sentido} de {valor} após o pico",
+    "manchete_vazia": "{indicador} ({pais}): sem dados nos episódios selecionados",
+    "manchete_par": "Brasil reagiu depois dos EUA em {depois} de {validos}",
+    "manchete_par_vazia": "Não há episódio com dados nos dois países",
+    "defasagem_depois": "Brasil reagiu {n} depois",
+    "defasagem_antes": "Brasil reagiu {n} antes",
+    "defasagem_igual": "Reagiram no mesmo mês",
+    "defasagem_sem": "Sem dados para comparar",
+    "sem_dados_ep": "{indicador} ({pais}) não tem dados para {episodios}. A série começa em {inicio}.",
+    "recuperado": "{n}",
+    "nao_recuperado": "não voltou em {n} meses",
+    "nao_se_aplica": "não se aplica",
+    "eixo_x": "Meses em relação ao pico (0 = pico do NBER)",
+    "intro_paises": "Cada série dos EUA ao lado da equivalente brasileira, alinhadas ao pico. Dentro de cada indicador, os três episódios usam a mesma escala vertical, para que a intensidade possa ser comparada. O ponto marca o primeiro mês em que a série passou do limiar de reação.",
+    "intro_medidas": "Maior desvio em relação ao pico, meses até esse ponto e meses até a série voltar ao nível do pico, por indicador e episódio. A tabela segue os filtros de grupo, país e episódios.",
+    "intro_metodo": "De onde vem cada série, como ela foi tratada e quando os dados foram atualizados.",
+    "aviso_pais_paises": "Esta visão sempre mostra os dois países; o filtro de país não se aplica aqui.",
+    "paises_vazio": "Não há séries equivalentes nos dois países para o grupo escolhido.",
+    "nao_recuperado_curto": "> {n} meses",
+    "defasagem_curta_depois": "+{n} (Brasil depois)",
+    "defasagem_curta_antes": "−{n} (Brasil antes)",
+    "defasagem_curta_igual": "0 (mesmo mês)",
+    "defasagem_curta_sem": "sem dados",
+    "linha_tempo": "Recessões dos EUA (NBER), do pico ao vale. Clique num episódio para incluir ou tirar da comparação; as faixas cinzas ficam fora da análise.",
+    "titulo_defasagem": "Defasagem entre a reação dos EUA e a do Brasil, por episódio",
+    "sub_defasagem": "Meses entre a primeira reação da série brasileira e a da série equivalente dos EUA. À direita do zero, o Brasil reagiu depois. A hipótese H1 espera pontos cada vez mais próximos do zero de 1981–82 para 2020."
+  },
+  "glossario": [
+    [
+      "Pico e vale",
+      "Marcos definidos pelo NBER. O pico é o mês de maior atividade antes da queda; o vale, o ponto mais baixo antes da recuperação."
+    ],
+    [
+      "Mês relativo ao pico",
+      "Posição de cada observação contada a partir do pico: −6 é seis meses antes, +12 é um ano depois. Permite sobrepor episódios de décadas diferentes."
+    ],
+    [
+      "Número-índice (pico = 100)",
+      "Cada valor dividido pelo valor do mês de pico, vezes 100. Um índice de 92 está 8% abaixo do pico."
+    ],
+    [
+      "Pontos percentuais (p.p.)",
+      "Usado em taxas, como juros e desemprego. É a diferença simples entre a taxa do mês e a do pico: de 5% para 8% são +3 p.p."
+    ],
+    [
+      "Maior queda, alta ou variação",
+      "Maior desvio da série em relação ao pico dentro da janela de cálculo. Para produção é a maior queda; para desemprego e câmbio, a maior alta; para juros e inflação, a maior variação em qualquer direção."
+    ],
+    [
+      "Recuperação",
+      "Meses entre o pico e o primeiro mês, depois do ponto extremo, em que a série volta ao nível do pico."
+    ],
+    [
+      "Primeira reação e defasagem",
+      "A primeira reação é o primeiro mês em que a série passa do limiar definido para ela. A defasagem é a diferença, em meses, entre a reação do Brasil e a dos EUA."
+    ],
+    [
+      "Edição",
+      "Retrato congelado dos dados e dos métodos em uma data. Informando a edição, qualquer gráfico pode ser refeito no futuro com os mesmos números."
+    ]
+  ]
+}
